@@ -1,0 +1,86 @@
+.cta {
+  padding-bottom: 120px;
+}
+
+.banner {
+  background: linear-gradient(135deg, #6a35ff 0%, #4c1dcc 100%);
+  border-radius: 24px;
+  padding: 80px 40px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 40px 80px rgba(106, 53, 255, 0.3);
+}
+
+.banner h2 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.chrome {
+  background-color: white;
+  color: #030303;
+}
+
+.chrome:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.firefox {
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.firefox:hover {
+  background-color: #252525;
+  transform: translateY(-2px);
+}
+
+.btnIcon {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 60px 20px;
+  }
+
+  .banner h2 {
+    font-size: 2.2rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
