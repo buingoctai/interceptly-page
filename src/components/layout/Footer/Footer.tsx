@@ -43,9 +43,14 @@ export default function Footer() {
         <div className={styles.bottom}>
           <p>© {currentYear} Interceptly Labs. All rights reserved.</p>
           <div className={styles.social}>
-            <Link href="#">Twitter</Link>
-            <Link href="#">Discord</Link>
-            <Link href="#">LinkedIn</Link>
+            <Link href="#">Reddit</Link>
+            <Link
+              href="https://www.linkedin.com/in/t%C3%A0i-b%C3%B9i-0010a6152/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </Link>
           </div>
         </div>
       </div>
