@@ -1,0 +1,101 @@
+.changelog {
+  min-height: 100vh;
+  background-color: #030303;
+}
+
+.header {
+  padding: 100px 0 60px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 4rem;
+  margin: 20px 0;
+  background: linear-gradient(135deg, #fff 0%, #888 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--muted-foreground);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto 120px;
+}
+
+.release {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.releaseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.versionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.version {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+}
+
+.statusBadge {
+  background: rgba(106, 53, 255, 0.1);
+  color: #6a35ff;
+  padding: 6px 12px;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.featuresList {
+  display: grid;
+  gap: 32px;
+}
+
+.featureItem h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.featureItem p {
+  font-size: 0.95rem;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .release {
+    padding: 24px;
+  }
+}

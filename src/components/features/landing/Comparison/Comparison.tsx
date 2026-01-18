@@ -29,7 +29,7 @@ const comparisons = [
 
 export default function Comparison() {
   return (
-    <section className={`${styles.comparison} section`}>
+    <section id="how-it-works" className={`${styles.comparison} section`}>
       <div className="container">
         <div className={styles.header}>
           <h2>How we stack up</h2>

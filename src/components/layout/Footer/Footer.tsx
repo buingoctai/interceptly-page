@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
@@ -9,35 +10,33 @@ export default function Footer() {
       <div className="container">
         <div className={styles.grid}>
           <div className={styles.brand}>
-            <div className={styles.logo}>
-              <div className={styles.logoIcon}></div>
+            <Link href="/" className={styles.logo}>
+              <Image
+                src="/logo.png"
+                alt="Interceptly Logo"
+                width={32}
+                height={32}
+                className={styles.logoImage}
+              />
               <span>INTERCEPTLY</span>
-            </div>
+            </Link>
             <p>The privacy-first API mocking tool built for the modern developer.</p>
           </div>
 
           <div className={styles.linksCol}>
             <h4>Product</h4>
-            <Link href="#">Extension Features</Link>
-            <Link href="#">Changelog</Link>
-            <Link href="#">CLI (Beta)</Link>
+            <Link href="/#features">Extension Features</Link>
+            <Link href="/changelog">Changelog</Link>
           </div>
 
           <div className={styles.linksCol}>
             <h4>Resources</h4>
-            <Link href="#">Documentation</Link>
-            <Link href="#">API Reference</Link>
-            <Link href="#">GitHub Repository</Link>
+            <Link href="/docs">Documentation</Link>
           </div>
 
           <div className={styles.linksCol}>
             <h4>Legal</h4>
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Cookie Settings</Link>
-            <div className={styles.status}>
-              <span className={styles.dot}></span>
-              Status: Operational
-            </div>
+            <Link href="/#privacy">Privacy Policy</Link>
           </div>
         </div>
 

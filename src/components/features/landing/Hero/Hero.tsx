@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -15,13 +16,15 @@ export default function Hero() {
               Surveillance.
             </h1>
             <p className={styles.description}>
-              Zero-friction API Mocking. No accounts. No cloud syncing.
+              LightWeight API Mocking. Zero-friction. No accounts. No cloud syncing.
               <br />
               Just local, high-performance interception directly in your browser.
             </p>
             <div className={styles.actions}>
               <button className="btn btn-primary">Start Mocking Now &rarr;</button>
-              <button className="btn btn-outline">View Documentation</button>
+              <Link href="/docs" className="btn btn-outline">
+                View Documentation
+              </Link>
             </div>
           </div>
 

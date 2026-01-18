@@ -28,11 +28,11 @@ export default function Features() {
         <div className={styles.header}>
           <h2>No Login Required. No Strings Attached.</h2>
           <p>
-            We believe developer tools should stay out of your way. Start mocking
+            We believe developer tools should stay out of your way. Start LightWeight mocking
             <br />
             immediately without creating an account or handing over your email.
           </p>
-          <div className={styles.compliance}>
+          <div id="privacy" className={styles.compliance}>
             <span className={styles.check}>✓</span> GDPR Compliant
           </div>
         </div>

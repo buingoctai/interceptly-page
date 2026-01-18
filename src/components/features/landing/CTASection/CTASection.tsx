@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./CTASection.module.css";
 
 export default function CTASection() {
@@ -13,14 +14,10 @@ export default function CTASection() {
           <p>Join 15,000+ developers mocking APIs locally with Interceptly.</p>
 
           <div className={styles.actions}>
-            <button className={`${styles.button} ${styles.chrome}`}>
+            <Link href="#" className={`${styles.button} ${styles.chrome}`}>
               <span className={styles.btnIcon}>📥</span>
               Add to Chrome
-            </button>
-            <button className={`${styles.button} ${styles.firefox}`}>
-              <span className={styles.btnIcon}>🦊</span>
-              Install for Firefox
-            </button>
+            </Link>
           </div>
         </div>
       </div>

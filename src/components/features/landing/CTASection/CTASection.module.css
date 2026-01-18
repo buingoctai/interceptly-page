@@ -50,17 +50,6 @@
   transform: translateY(-2px);
 }
 
-.firefox {
-  background-color: #1a1a1a;
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.firefox:hover {
-  background-color: #252525;
-  transform: translateY(-2px);
-}
-
 .btnIcon {
   font-size: 1.25rem;
 }

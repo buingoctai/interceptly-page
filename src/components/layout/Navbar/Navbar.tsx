@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 
@@ -5,20 +6,26 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={`${styles.container} container`}>
-        <div className={styles.logo}>
-          <div className={styles.logoIcon}></div>
+        <Link href="/" className={styles.logo}>
+          <Image
+            src="/logo.png"
+            alt="Interceptly Logo"
+            width={32}
+            height={32}
+            className={styles.logoImage}
+          />
           <span>INTERCEPTLY</span>
-        </div>
+        </Link>
 
         <div className={styles.links}>
-          <Link href="#features">Features</Link>
-          <Link href="#how-it-works">How it works</Link>
-          <Link href="#privacy">Privacy</Link>
-          <Link href="#install">Install</Link>
+          <Link href="/#features">Features</Link>
+          <Link href="/#how-it-works">How it works</Link>
+          <Link href="/#privacy">Privacy</Link>
+          <Link href="/#install">Install</Link>
         </div>
 
         <div className={styles.actions}>
-          <Link href="https://chrome.google.com/webstore" className="btn btn-primary">
+          <Link href="#" className="btn btn-primary">
             Get Started
           </Link>
         </div>
