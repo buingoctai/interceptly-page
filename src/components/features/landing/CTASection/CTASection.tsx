@@ -11,7 +11,7 @@ export default function CTASection() {
             <br />
             before you&apos;re ready.
           </h2>
-          <p>Join 15,000+ developers mocking APIs locally with Interceptly.</p>
+          <p>Join our growing community of developers mocking APIs locally with Interceptly.</p>
 
           <div className={styles.actions}>
             <Link href="#" className={`${styles.button} ${styles.chrome}`}>
