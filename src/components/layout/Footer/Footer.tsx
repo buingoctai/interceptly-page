@@ -14,8 +14,8 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="Interceptly Logo"
-                width={32}
-                height={32}
+                width={64}
+                height={64}
                 className={styles.logoImage}
               />
               <span>INTERCEPTLY</span>
