@@ -34,7 +34,7 @@ export default function Hero() {
                 <div className={styles.dot}></div>
                 <div className={styles.dot}></div>
                 <div className={styles.dot}></div>
-                <div className={styles.extensionInfo}>EXTENSION V1.4.0</div>
+                <div className={styles.extensionInfo}>EXTENSION V1.0.0</div>
               </div>
               <div className={styles.mockupContent}>
                 <div className={styles.extensionRow}>

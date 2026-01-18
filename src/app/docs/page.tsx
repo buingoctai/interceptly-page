@@ -2,6 +2,12 @@ import Navbar from "@/components/layout/Navbar/Navbar";
 import Footer from "@/components/layout/Footer/Footer";
 import styles from "./page.module.css";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Documentation",
+  description: "Learn how to mock, redirect, and block API requests using Interceptly.",
+};
 
 export default function DocsPage() {
   return (

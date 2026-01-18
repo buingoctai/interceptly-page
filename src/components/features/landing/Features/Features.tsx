@@ -16,7 +16,7 @@ const features = [
   {
     title: "Dev Centric",
     description:
-      "Full support for REST, GraphQL, and WebSockets. Regular expression matching and delay simulation out of the box.",
+      "Full support for REST. Regular expression matching and delay simulation out of the box.",
     icon: "🛠️",
   },
 ];

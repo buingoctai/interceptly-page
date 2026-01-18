@@ -1,6 +1,12 @@
 import Navbar from "@/components/layout/Navbar/Navbar";
 import Footer from "@/components/layout/Footer/Footer";
 import styles from "./page.module.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Changelog",
+  description: "Stay updated with the latest releases and structural features of Interceptly.",
+};
 
 export default function ChangelogPage() {
   const releases = [
