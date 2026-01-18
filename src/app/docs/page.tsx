@@ -85,7 +85,7 @@ export default function DocsPage() {
               <h2>Network Activity</h2>
               <p>
                 Monitor live traffic in real-time. See which requests are being intercepted and the
-                resulting status codes.
+                resulting status codes and quick create rules.
               </p>
               <Image
                 src="/images/docs/network-mobile.png"
