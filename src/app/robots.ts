@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://interceptly.page/sitemap.xml",
+    sitemap: "https://interceptly.net/sitemap.xml",
   };
 }

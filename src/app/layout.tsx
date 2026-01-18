@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://interceptly.page"),
+  metadataBase: new URL("https://interceptly.net"),
   title: {
     default: "Interceptly | Privacy-First API Mocking",
     template: "%s | Interceptly",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://interceptly.page",
+    url: "https://interceptly.net",
     siteName: "Interceptly",
     title: "Interceptly | Privacy-First API Mocking",
     description: "Zero-friction API Mocking directly in your browser. Local-only, privacy-first.",
