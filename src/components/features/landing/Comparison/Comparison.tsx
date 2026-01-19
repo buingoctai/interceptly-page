@@ -2,16 +2,28 @@ import styles from "./Comparison.module.css";
 
 const comparisons = [
   {
-    feature: "Account Setup",
-    interceptly: "None Required",
-    competitors: "Email/OAuth Required",
+    feature: "Account Required",
+    interceptly: "No Account Needed",
+    competitors: "Email / SSO Required",
     highlight: true,
   },
   {
     feature: "Data Storage",
-    interceptly: "Local-Only Browser",
-    competitors: "Proprietary Cloud Sync",
+    interceptly: "Local-Only (Your Device)",
+    competitors: "Cloud Servers",
     highlight: true,
+  },
+  {
+    feature: "Proxy / VPN Setup",
+    interceptly: "Zero Config",
+    competitors: "Complex Setup",
+    highlight: false,
+  },
+  {
+    feature: "Team & Seat Limits",
+    interceptly: "Unlimited",
+    competitors: "Pay per Seat",
+    highlight: false,
   },
   {
     feature: "Onboarding Time",
@@ -20,10 +32,10 @@ const comparisons = [
     highlight: false,
   },
   {
-    feature: "Privacy Surveillance",
-    interceptly: "✓",
-    competitors: "✗",
-    highlight: false,
+    feature: "Tracking & Analytics",
+    interceptly: "None (Zero Data)",
+    competitors: "Usage Tracking",
+    highlight: true,
   },
 ];
 
