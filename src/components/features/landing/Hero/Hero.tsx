@@ -21,7 +21,22 @@ export default function Hero() {
               Just local, high-performance interception directly in your browser.
             </p>
             <div className={styles.actions}>
-              <button className="btn btn-primary">Start Mocking Now &rarr;</button>
+              {process.env.NEXT_PUBLIC_EXTENSION_DOWNLOAD_MODE === "true" ? (
+                <a
+                  href={`/downloads/${process.env.NEXT_PUBLIC_EXTENSION_FILENAME || "interceptly-extension.zip"}`}
+                  download
+                  className="btn btn-primary"
+                >
+                  Download Extension (ZIP)
+                </a>
+              ) : (
+                <Link
+                  href={process.env.NEXT_PUBLIC_EXTENSION_STORE_LINK || "#"}
+                  className="btn btn-primary"
+                >
+                  Add to Chrome &rarr;
+                </Link>
+              )}
               <Link href="/docs" className="btn btn-outline">
                 View Documentation
               </Link>

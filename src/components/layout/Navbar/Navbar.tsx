@@ -25,9 +25,22 @@ export default function Navbar() {
         </div>
 
         <div className={styles.actions}>
-          <Link href="#" className="btn btn-primary">
-            Get Started
-          </Link>
+          {process.env.NEXT_PUBLIC_EXTENSION_DOWNLOAD_MODE === "true" ? (
+            <a
+              href={`/downloads/${process.env.NEXT_PUBLIC_EXTENSION_FILENAME || "interceptly-extension.zip"}`}
+              download
+              className="btn btn-primary"
+            >
+              Download
+            </a>
+          ) : (
+            <Link
+              href={process.env.NEXT_PUBLIC_EXTENSION_STORE_LINK || "#"}
+              className="btn btn-primary"
+            >
+              Get Started
+            </Link>
+          )}
         </div>
       </div>
     </nav>
