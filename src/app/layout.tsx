@@ -6,6 +6,13 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://interceptly.net"),
+  alternates: {
+    canonical: "./",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   title: {
     default: "Interceptly | Privacy-First API Mocking",
     template: "%s | Interceptly",
