@@ -9,7 +9,7 @@ export default function Hero() {
           <div className={styles.content}>
             <div className="badge">PRIVACY-FIRST MOCKING</div>
             <h1>
-              API Mocking,
+              Free API Mocking,
               <br />
               <span className="text-gradient">Minus</span> the
               <br />
